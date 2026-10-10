@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chelli Akshaya | Aspiring Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F7F9;--surface:#fff;--ink:#14212E;--muted:#5A6878;--line:#E1E5EB;--teal:#0B8A84;--teal-soft:#DDF2F0;--amber:#F0A238;--nav:rgba(246,247,249,.85);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1620;--surface:#16212E;--ink:#EAF0F6;--muted:#9AA9B9;--line:#25344A;--teal:#3FC9C0;--teal-soft:#12302F;--nav:rgba(14,22,32,.85)}}
+:root[data-theme="dark"]{--bg:#0E1620;--surface:#16212E;--ink:#EAF0F6;--muted:#9AA9B9;--line:#25344A;--teal:#3FC9C0;--teal-soft:#12302F;--nav:rgba(14,22,32,.85)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.15;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+h2{font-size:clamp(28px,4vw,40px);font-weight:800;margin-bottom:12px}
+.lead{color:var(--muted);max-width:60ch;margin-bottom:40px}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:var(--nav);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 20px 'Bricolage Grotesque',sans-serif;text-decoration:none}
+.logo span{color:var(--teal)}
+.links{display:flex;gap:4px;align-items:center}
+.links a{text-decoration:none;font-weight:500;font-size:15px;padding:8px 12px;border-radius:8px;color:var(--muted);transition:.2s}
+.links a:hover,.links a.on{color:var(--ink);background:var(--teal-soft)}
+.icon-btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);width:40px;height:40px;border-radius:10px;cursor:pointer;font-size:18px}
+#menu{display:none}
+@media(max-width:860px){#menu{display:inline-block}.links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--surface);padding:12px 24px 20px;border-bottom:1px solid var(--line)}.links.open{display:flex}}
+/* buttons */
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:13px 24px;border-radius:12px;border:2px solid var(--ink);transition:transform .2s,background .2s,color .2s;cursor:pointer;font-size:15px}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{transform:translateY(-3px)}
+.btn.ghost:hover{background:var(--teal-soft)}
+/* hero */
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hello{display:inline-flex;gap:8px;align-items:center;background:var(--teal-soft);color:var(--teal);padding:6px 14px;border-radius:99px;font-weight:600;font-size:14px;margin-bottom:20px}
+.hello i{width:8px;height:8px;border-radius:50%;background:var(--teal);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.25;transform:scale(1.6)}}
+h1{font-size:clamp(40px,7vw,68px);font-weight:800;margin-bottom:16px}
+.role{font:500 clamp(18px,2.4vw,24px) 'Bricolage Grotesque',sans-serif;color:var(--muted);margin-bottom:20px;min-height:1.4em}
+.role b{color:var(--teal)}
+.caret{display:inline-block;width:2px;height:1em;background:var(--teal);vertical-align:-2px;margin-left:2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p.sub{color:var(--muted);max-width:52ch;margin-bottom:28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.pic{position:relative;max-width:360px;margin-inline:auto;width:100%}
+.frame{aspect-ratio:1;border-radius:32px;background:var(--surface);border:1px solid var(--line);position:relative;overflow:hidden;display:grid;place-items:center;box-shadow:0 20px 50px -20px rgba(11,138,132,.35)}
+.frame img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;position:absolute;inset:0;animation:photoIn 1s cubic-bezier(.2,.8,.2,1) both}
+@keyframes photoIn{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:none}}
+.frame .ini{font:800 96px 'Bricolage Grotesque',sans-serif;color:var(--teal)}
+.chip{position:absolute;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 14px;font-weight:600;font-size:14px;box-shadow:0 10px 24px -12px rgba(0,0,0,.3);animation:float 5s ease-in-out infinite}
+.chip.a{top:-14px;right:-10px}.chip.b{bottom:30px;left:-16px;animation-delay:-2.5s}
+@keyframes float{50%{transform:translateY(-8px)}}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.pic{order:-1;max-width:260px}.chip.b{left:-6px}.chip.a{right:-6px}}
+/* cards */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--teal)}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+.ic{width:46px;height:46px;border-radius:12px;background:var(--teal-soft);display:grid;place-items:center;font-size:22px;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tags span{font-size:13px;font-weight:600;background:var(--teal-soft);color:var(--teal);padding:4px 12px;border-radius:99px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center}
+.about .frame{max-width:320px;aspect-ratio:4/5;border-radius:50% 50% 24px 24px}
+.about p+p{margin-top:14px}
+.about p{color:var(--muted)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.facts div{border-left:3px solid var(--amber);padding-left:12px}
+.facts small{display:block;color:var(--muted)}.facts b{font-weight:600}
+@media(max-width:860px){.about{grid-template-columns:1fr}.about .frame{margin-inline:auto}}
+/* timeline */
+.tl{border-left:2px solid var(--line);padding-left:28px;position:relative}
+.tl .item{position:relative}
+.tl .item::before{content:"";position:absolute;left:-37px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--teal);border:4px solid var(--bg)}
+/* project */
+.project{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;overflow:hidden}
+.project .viz{background:var(--teal-soft);padding:32px;display:grid;place-items:center}
+.project .body{padding:32px}
+.project svg{width:100%;max-width:340px}
+.draw{stroke-dasharray:600;stroke-dashoffset:600}
+.in .draw{animation:dash 2.2s .2s ease forwards}
+@keyframes dash{to{stroke-dashoffset:0}}
+@media(max-width:760px){.project{grid-template-columns:1fr}}
+/* resume */
+.resume{display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.resume ul{list-style:none;padding:0;color:var(--muted);margin:12px 0 0}
+.resume li::before{content:"✓ ";color:var(--teal);font-weight:700}
+/* contact */
+.contact .card{display:flex;gap:16px;align-items:center;text-decoration:none}
+.contact .ic{margin:0;flex:none}
+.contact small{color:var(--muted);display:block}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px;text-align:center}
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.draw{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#home">Akshaya<span>.</span></a>
+<div class="links" id="links">
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+</div>
+<div style="display:flex;gap:8px"><button class="icon-btn" id="theme" aria-label="Switch light or dark theme">◐</button><button class="icon-btn" id="menu" aria-label="Open menu">☰</button></div>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+<div>
+<div class="hello"><i></i>Open to data analyst roles</div>
+<h1>Hi, I'm Chelli Akshaya.</h1>
+<div class="role">I turn data into <b id="type"></b><span class="caret"></span></div>
+<p class="sub">B.Tech CSE student who works with Power BI, SQL, Python and statistics to find the story inside the numbers.</p>
+<div class="cta"><a class="btn primary" href="#projects">View my project</a><a class="btn ghost" href="#contact">Contact me</a></div>
+</div>
+<div class="pic">
+<div class="frame">
+<img src="photo.jpeg
+" alt="Chelli Akshaya" width="720" height="864">
+</div>
+<div class="chip a">📊 Power BI</div><div class="chip b">🐍 Python + SQL</div>
+</div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+<div class="rv"><div class="frame"><img src="photo.jpeg" alt="Portrait of Chelli Akshaya" width="720" height="864" loading="lazy" style="animation:none"></div></div>
+<div class="rv">
+<h2>About me</h2>
+<p>I'm a Computer Science student who enjoys finding patterns in messy data and explaining them clearly. I'm learning to clean, analyse and visualise data so that people can make better decisions.</p>
+<p>My final project mines social media and news to spot disease outbreaks early. It showed me how useful data can be when timing matters.</p>
+<div class="facts">
+<div><small>Studying</small><b>B.Tech, CSE</b></div>
+<div><small>Goal</small><b>Data Analyst</b></div>
+<div><small>College</small><b>DNR College of Engineering Technology</b></div>
+<div><small>Tools</small><b>Power BI, SQL, Python</b></div>
+</div>
+</div>
+</div></section>
+
+<section id="skills" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+<h2 class="rv">Skills</h2><p class="lead rv">The tools I use to take data from raw to ready to present.</p>
+<div class="grid">
+<div class="card rv"><div class="ic">📊</div><h3>Power BI</h3><p>Build interactive dashboards and reports that make trends easy to read.</p></div>
+<div class="card rv"><div class="ic">🗄️</div><h3>SQL</h3><p>Query, join and summarise data stored in relational databases.</p></div>
+<div class="card rv"><div class="ic">🐍</div><h3>Python</h3><p>Clean, explore and analyse data with scripts.</p></div>
+<div class="card rv"><div class="ic">📈</div><h3>Statistics</h3><p>Use descriptive statistics and probability to back up findings.</p></div>
+</div></div></section>
+
+<section id="education"><div class="wrap">
+<h2 class="rv">Education</h2><p class="lead rv">Where I'm studying now.</p>
+<div class="tl"><div class="item card rv"><h3>B.Tech in Computer Science and Engineering</h3><p>DNR College of Engineering Technology</p><div class="tags"><span>Pursuing</span><span>CSE</span></div></div></div>
+</div></section>
+
+<section id="projects" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+<h2 class="rv">Projects</h2><p class="lead rv">Work that shows how I approach a real problem.</p>
+<div class="card project rv">
+<div class="viz"><svg viewBox="0 0 320 180" role="img" aria-label="Line chart showing a rising signal that triggers an alert">
+<g stroke="var(--line)"><path d="M10 150H310M10 100H310M10 50H310"/></g>
+<path class="draw" d="M10 140 L60 130 L110 135 L160 110 L210 90 L250 45 L305 20" fill="none" stroke="var(--teal)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="250" cy="45" r="8" fill="var(--amber)"><animate attributeName="r" values="6;12;6" dur="1.8s" repeatCount="indefinite"/></circle>
+<text x="190" y="30" font-size="13" font-weight="600" fill="var(--ink)">Early warning</text></svg></div>
+<div class="body">
+<h3>Intelligent Disease Outbreak Detection and Early Warning System Using Social Media and News Mining</h3>
+<p style="margin-top:12px">A system that mines social media posts and news articles to detect signs of a disease outbreak early, so that warnings can be raised sooner.</p>
+<div class="tags"><span>Data mining</span><span>Python</span><span>Early warning</span></div>
+</div></div>
+</div></section>
+
+<section id="certs"><div class="wrap">
+<h2 class="rv">Certifications</h2><p class="lead rv">Courses I have completed.</p>
+<div class="card rv" style="max-width:520px"><div class="ic">🎓</div><h3>Python Full Stack Developer</h3><p>Talentshine, India</p></div>
+</div></section>
+
+<section id="resume" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+<h2 class="rv">Resume</h2>
+<div class="card resume rv"><div><h3>Chelli Akshaya, Aspiring Data Analyst</h3>
+<ul><li>B.Tech CSE, DNR College of Engineering Technology</li><li>Power BI, SQL, Python, Statistics</li><li>Python Full Stack Developer certification</li></ul></div>
+<a class="btn primary" href="https://wa.me/919703755010?text=Hi%20Akshaya%2C%20could%20you%20share%20your%20resume%3F" target="_blank" rel="noopener">Request resume on WhatsApp</a></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2 class="rv">Contact</h2><p class="lead rv">Message me about opportunities, projects or internships.</p>
+<div class="grid" style="max-width:640px">
+<a class="card rv" href="https://wa.me/919703755010" target="_blank" rel="noopener"><div class="ic">💬</div><div><small>WhatsApp</small><b>+91 97037 55010</b></div></a>
+<a class="card rv" href="tel:+919703755010"><div class="ic">📞</div><div><small>Call</small><b>+91 97037 55010</b></div></a>
+</div>
+</div></section>
+</main>
+<footer>© 2026 Chelli Akshaya</footer>
+
+<script>
+const words=["clear dashboards.","useful insights.","better decisions."];
+let w=0,c=0,del=false;const t=document.getElementById('type');
+function tick(){const s=words[w];c+=del?-1:1;t.textContent=s.slice(0,c);
+let d=del?35:70;if(!del&&c===s.length){del=true;d=1500}else if(del&&c===0){del=false;w=(w+1)%words.length;d=300}setTimeout(tick,d)}
+tick();
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+const links=document.getElementById('links');
+document.getElementById('menu').onclick=()=>links.classList.toggle('open');
+links.addEventListener('click',()=>links.classList.remove('open'));
+document.getElementById('theme').onclick=()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=dark?'light':'dark'};
+const secs=[...document.querySelectorAll('main section')],as=[...links.querySelectorAll('a')];
+addEventListener('scroll',()=>{let cur=secs[0].id;secs.forEach(s=>{if(s.getBoundingClientRect().top<140)cur=s.id});as.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur))},{passive:true});
+</script>
+</body>
+</html>
